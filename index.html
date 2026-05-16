@@ -3971,6 +3971,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
                 return rows;
             }
+            function _inventoryRows() {
                 var hdr = ['Product','Category','Stock Qty','Unit','Rate','Stock Value','Min Stock','Low Stock?'];
                 var rows = [hdr];
                 (window.AppState.products||[]).forEach(function(p) {
@@ -10896,8 +10897,6 @@ window.openPermissionRequest=function(empEmail){
     window.openRoleDrawer(emp.id);
 };
 </script>
-</body>
-</html>
 
 <script>
 // ================================================================
@@ -13961,8 +13960,6 @@ ${unpaidAmt > totalRev*0.3 ? '<div style="background:#fef3c7;border:1px solid #f
     }, 800);
 })();
 </script>
-</body>
-</html>
 <script type="module">
 // ================================================================
 // SUBSCRIPTION SYSTEM + ANALYTICS TRACKING
